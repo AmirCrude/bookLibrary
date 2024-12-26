@@ -3,3 +3,70 @@ package-lock.json
 package.json
 queries.sql
 .env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node.js modules
+node_modules/
+
+# Environment Variables
+.env
+
+# Build and Cache Files
+dist/
+build/
+.cache/
+.nyc_output/
+coverage/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Jest
+coverage/
+*.lcov
+
+# Debugging files
+*.log
+
+# Uploaded files (if applicable)
+uploads/
+public/uploads/
+
+# Compiled code
+*.out
+*.class
+*.o
+
+# Package lock files (optional)
+package-lock.json
+yarn.lock
+
+# Temporary and backup files
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+
+# User uploads and generated content
+uploads/
+public/uploads/
+
+# Optional lock files (keep one if using npm or Yarn)
+package-lock.json
+yarn.lock
