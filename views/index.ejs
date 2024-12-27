@@ -8,5 +8,72 @@
 </head>
 <body>
     
+    <section id="page1">
+        <div class="container">
+            <h3>Today a READER <br> Tomorrow a LEADER</h3>
+            <div class="container-1">
+                <div style="transform: translate(100px, 50px); margin-right: 50px;">
+                    <h2 style="font-family: sans-serif; font-size: 5rem; font-weight: lighter;">YOUR BOOK</h2>
+                    <h1 style="font-family: sans-serif; font-size: 5rem; transform: translate(50px, -60px);">LIBRARY</h1>
+                    <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                        <button class="P1-btn addbtn">Add Book</button>
+                        <button class="P1-btn prevbtn">Previous Books</button>
+                    </div>
+                </div>
+                <div class="homeImages">
+                    <img id="atom" src="/assets/atom.png" alt="book1" class="images atom" style="position: relative; z-index: 30;">
+                    <img id="pride" src="/assets/pride.png" alt="book2" class="images pride" style="width: 350px; z-index: 10; margin: 0px 0px 25px -490px; transform: rotate(-20deg);">
+                    <img id="limit" src="/assets/limit.png" alt="book3" class="images limit" style="z-index: 2; height: 350px; transform: rotate(20deg); margin: 0px 0px 50px -200px;">
+                    <div class="circle" style="background-color: black; width: 380px; height: 70px; border-radius: 50%; transform: translate(0px, -70px); position: relative; z-index: -1;"></div>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+    </section>
+    
+    <script>
+        // Get elements
+        const atom = document.getElementById('atom');
+        const pride = document.getElementById('pride');
+        const limit = document.getElementById('limit');
+    
+        // Function to handle hover effect
+        const applyHoverEffect = () => {
+            atom.style.transition = "transform 0.5s ease-in-out";
+            pride.style.transition = "transform 0.5s ease-in-out";
+            limit.style.transition = "transform 0.5s ease-in-out";
+    
+            // Scale atom
+            atom.style.transform = "scale(1.05)";
+            atom.style.transform = "translate(0px, 20px)";
+            // Rotate pride and limit
+            pride.style.transform = "rotate(-40deg)"; // -20deg + 20deg
+            limit.style.transform = "rotate(40deg)"; // 20deg + 20deg
+        };
+    
+        // Function to reset to the original state
+        const resetHoverEffect = () => {
+            atom.style.transform = "scale(1)";
+            pride.style.transform = "rotate(-20deg)";
+            limit.style.transform = "rotate(20deg)";
+        };
+    
+        // Add event listeners to atom
+        atom.addEventListener('mouseenter', applyHoverEffect);
+        atom.addEventListener('mouseleave', resetHoverEffect);
+
+        document.addEventListener("DOMContentLoaded", () => {
+        const homeImages = document.querySelector('.homeImages');
+        // Add the animation class after a short delay to ensure smooth entry
+        setTimeout(() => {
+            homeImages.classList.add('animate');
+        }, 100); // Adjust the delay if needed
+    });
+    </script>
+    
+    
+
 </body>
 </html>
