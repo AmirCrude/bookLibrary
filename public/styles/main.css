@@ -66,7 +66,7 @@ h3 {
 
 .subtitle {
     font-size: 5rem;
-    transform: translate(40px, -30px);
+    transform: translate(-30px, -50px);
     font-weight: 900;
 }
 
@@ -231,4 +231,175 @@ p {
 
 .seeall-btn:hover {
     transform: translateY(-50px);
+}
+
+.containerFooter {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    background-image: linear-gradient(to bottom, #D6EFD8, #80AF81);
+}
+
+.footerText {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    padding: 20px;
+    margin: 20px 50px;
+}
+/* General Styling */
+.socialMedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;  /* space between each icon */
+    margin: 20px 0;
+}
+
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    padding: 12px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon i {
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);  /* subtle zoom on hover */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Specific Colors for Social Media */
+.facebook {
+    background-color: #1877f2;
+}
+
+.instagram {
+    background-color: #e4405f;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+/* Hover Effects */
+.facebook:hover {
+    background-color: #1568c1;
+}
+
+.instagram:hover {
+    background-color: #c13584;
+}
+
+.twitter:hover {
+    background-color: #0d8ccf;
+}
+
+
+/* font style */
+
+/* Apply Poppins font globally */
+body {
+    font-family: 'Poppins', sans-serif; /* Default font */
+    line-height: 1.6; /* Increase line spacing for readability */
+    color: #333; /* Dark gray text color */
+    background-color: #f8f8f8; /* Light background color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for Heading 1 */
+h1 {
+    font-size: 3rem; /* Larger font for the main heading */
+    font-weight: 600; /* Slightly bold for emphasis */
+    color: #333;
+    /* margin: 20px 0; */
+    text-align: center;
+    letter-spacing: 1px; /* Slight spacing between letters */
+}
+
+/* Styling for Heading 2 */
+h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #444;
+    /* margin: 15px 0; */
+    text-align: left;
+}
+
+/* Styling for Heading 3 */
+h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #555;
+    /* margin: 10px 0; */
+    text-align: left;
+}
+
+/* Styling for Heading 4 */
+h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #666;
+    /* margin: 10px 0; */
+}
+
+/* Styling for Heading 5 */
+h5 {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #777;
+    /* margin: 5px 0; */
+}
+
+/* Styling for Heading 6 */
+h6 {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #888;
+    /* margin: 5px 0; */
+}
+
+/* Styling for Paragraphs */
+p {
+    font-size: 1rem; /* Standard font size for paragraphs */
+    font-weight: 400; /* Regular weight */
+    color: #333;
+    line-height: 1.8; /* Spacing between lines for readability */
+    margin-bottom: 15px;
+    text-align: justify; /* Justify text for a neat block appearance */
+}
+
+/* Add space between headers and paragraphs */
+/* h1, h2, h3, h4, h5, h6, p {
+    margin-left: 20px;
+    margin-right: 20px;
+} */
+
+/* Optionally, add a soft hover effect to headings */
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    color: #1A5319; /* Change color on hover */
+    cursor: pointer;
+}
+
+/* For paragraphs, optionally add a subtle line below for emphasis */
+p:hover {
+    border-bottom: 2px solid #1A5319;
+    padding-bottom: 5px;
 }
