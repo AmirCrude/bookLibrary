@@ -154,3 +154,81 @@ h3 {
     position: relative;
     z-index: -1;
 }
+
+
+.containerFav {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    background-image: linear-gradient(to bottom, #D6EFD8, #80AF81);
+}
+
+
+
+.atoms:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1) translate(50px, 0px);
+}
+
+p {
+    font-size: 2rem;
+    margin-right: 100px;
+}
+
+.text-container-fav {
+    padding: 20px 0px; /* Add padding around the text */
+    /* transform: translate(100px, -20px); Preserve existing transform */
+    margin-left: 100px;
+} 
+
+.containerPrevious {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    background-image: linear-gradient(to bottom, #80AF81, #D6EFD8);
+}
+
+.prevBookImg {
+    width: 250px;
+    height: 250px;
+    margin: 30px;
+}
+
+.prevBookImg:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1); 
+}
+
+.prevBookTxt {
+    font-size: 1.2rem;
+    padding: 0px 20px;
+    
+}
+
+.prevBooks {
+    background-color: white;
+    border-radius: 0px 100px;
+    margin: 100px;
+    text-align: center;
+}
+
+.contPrev {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seeall-btn {
+    transform: translateY(-50px);
+}
+
+.seeall-btn:hover {
+    transform: translateY(-50px);
+}
